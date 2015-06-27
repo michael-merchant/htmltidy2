@@ -131,7 +131,6 @@ function tidy(text, opts, cb) {
     setImmediate(function(){cb(error, result);});
   });
   worker.end(text);
-  worker.destroy();
 }
 
 function chooseExec() {
